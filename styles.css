@@ -1,0 +1,178 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures full-height layout */
+}
+
+/* Header Navigation */
+header {
+  padding: 10px 0;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav ul li {
+  margin: 0;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color 0.3s, opacity 0.3s, transform 0.3s;
+}
+nav ul li a:hover {
+  color: red;
+  opacity: 0.7;
+  transform: scale(1.1);
+}
+
+/* Home Page Styles */
+#home-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1; /* Takes up remaining vertical space */
+  text-align: center;
+}
+.title {
+  font-size: 5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 70px;
+  height: auto;
+  margin: 0 10px;
+}
+
+/* Shop Page */
+#shop-page {
+  padding: 20px;
+}
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+  gap: 20px; /* Spacing between items */
+  padding: 0 20px;
+}
+.shop-item {
+  background-color: white;
+  border: none; /* Removed the border */
+  border-radius: 0; /* Ensures no rounded corners */
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s;
+  overflow: hidden;
+  box-shadow: none; /* Prevents any shadow effect */
+}
+.shop-item:hover {
+  background-color: rgba(0, 0, 0, 0.05); /* Light tint on hover */
+  transform: scale(1.2); /* Slight scaling effect */
+}
+.shop-item img {
+  width: 100%;
+  height: auto;
+}
+.shop-item p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+  color: black;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  font-style: italic;
+  margin-top: 20px;
+  border-top: none;
+}
+
+/* Order Confirmed Page Styles */
+#order-page {
+  text-align: center;
+  padding: 20px;
+}
+#order-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+#order-page p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+.map-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.map-container iframe {
+  max-width: 800px;
+  width: 100%;
+  border: none;
+}
+/* General item page layout */
+.item-page {
+  display: flex;
+  height: 100vh; /* Ensure the layout fills the screen height */
+}
+
+.item-left {
+  width: 50%; /* Left half of the screen */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff; /* Optional: subtle background for contrast */
+}
+
+.item-left img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.item-right {
+  width: 50%; /* Right half of the screen */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item-right h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.item-right p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+/* Order button styles */
+.order-button {
+  width: 100%; /* Match the width of the description */
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.order-button:hover {
+  background-color: red; /* Turn red on hover */
+}
